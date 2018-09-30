@@ -1,0 +1,538 @@
+@import url('https://fonts.googleapis.com/css?family=Exo');
+
+* {
+    font-family: 'Exo', sans-serif;
+}
+#back-top {
+    color: darkgrey;
+    text-decoration: none;
+    border: grey 1px solid;
+    padding: 2px;
+    width: 30px;
+    height: 40px;
+    bottom: 60px;
+    right: 15px;
+    position: fixed;
+    text-align: center;
+    display: none;
+    cursor: pointer;
+    font-size: 1.4em;
+    font-weight: lighter;
+    z-index: 999;
+}
+.navbar {
+    background: #FFFFFF !important;
+    border-bottom: lightgrey 1px solid;
+    margin-bottom: 0 !important;
+    border-radius: 0 !important;
+}
+.nav-item {
+    border: 1px solid maroon;
+    border-radius: 1.5%;
+    margin: 1% 5% 1% 0;
+    width: 13vw;
+    background-color: white;
+}
+.nav-item a {
+    font-size: 1.3vw;
+    color: #474642 !important;
+    text-align: center;
+    padding: 9% 0;
+}
+.nav-item:hover {
+    background-color: #474642;
+    border: 1px solid maroon;
+}
+.nav-item a:hover {
+    color: #ffffff !important;
+}
+.navbar p {
+    font-size: 1.7vw;
+}
+.logo {
+    width: 200px;
+    height: 90px;
+}
+.www {
+    color: darkviolet;
+}
+.mrg {
+    display: block;
+    margin: 4% auto;
+    padding: 1% 3%;
+    font-size: 1.5em;
+}
+.paddings {
+    padding: 6% 0 10% 0;
+    border-bottom: 1px solid lightgrey;
+    display: block;
+    height: 145vh;
+}
+.paddings-2 {
+    padding: 6% 0 5% 0;
+    border-bottom: 1px solid lightgrey;
+    display: block;
+    height: 100%;
+}
+.list-style {
+    list-style-type: circle;
+}
+.maroon {
+    color: maroon;
+}
+.large-p {
+    font-size: 1.5vw;
+}
+
+@-webkit-keyframes fadeIn {
+    from { opacity:0; } to { opacity:1; }
+    0% {
+        opacity: 0;
+        transform: scale(.1);
+    }
+
+    85% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; }
+    0% {
+        opacity: 0;
+        transform: scale(.1);
+    }
+
+    85% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; }
+    0% {
+        opacity: 0;
+        transform: scale(.1);
+    }
+
+    85% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/*#fadeIn {*/
+    /*opacity: 0;*/
+    /*animation: fadeIn 1s linear; !* call our keyframe named fadeIn, use animation ease-in and repeat it only 1 time *!*/
+    /*-webkit-animation:fadeIn 1s linear;*/
+    /*-moz-animation:fadeIn 1s linear;*/
+    /*-webkit-animation-fill-mode:both;  !* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*!*/
+    /*-moz-animation-fill-mode:both;*/
+    /*animation-fill-mode: both;*/
+
+    /*-webkit-animation-duration:1s;*/
+    /*-moz-animation-duration:1s;*/
+    /*animation-duration:1s;*/
+
+    /*-webkit-animation-delay: 0.9s;*/
+    /*-moz-animation-delay: 0.9s;*/
+    /*animation-delay: 0.9s;*/
+/*}*/
+#fadeIn h1 {
+    font-size: 3.5rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    opacity: 0;
+    animation: fadeIn ease-in 1; /* call our keyframe named fadeIn, use animation ease-in and repeat it only 1 time */
+    -webkit-animation:fadeIn ease-in 1;
+    -moz-animation:fadeIn ease-in 1;
+    -webkit-animation-fill-mode:both;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode:both;
+    animation-fill-mode: both;
+
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    animation-duration:1s;
+
+    -webkit-animation-delay: 1.2s;
+    -moz-animation-delay: 1.2s;
+    animation-delay: 1.2s;
+}
+#fadeIn p {
+    opacity: 0;
+    animation: fadeIn ease-in 1; /* call our keyframe named fadeIn, use animation ease-in and repeat it only 1 time */
+    -webkit-animation:fadeIn ease-in 1;
+    -moz-animation:fadeIn ease-in 1;
+    -webkit-animation-fill-mode:both;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode:both;
+    animation-fill-mode: both;
+
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    animation-duration:1s;
+
+    -webkit-animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    animation-delay: 2s;
+}
+#fadeIn div:nth-child(4) {
+    opacity: 0;
+    animation: fadeIn ease-in 1; /* call our keyframe named fadeIn, use animation ease-in and repeat it only 1 time */
+    -webkit-animation:fadeIn ease-in 1;
+    -moz-animation:fadeIn ease-in 1;
+    -webkit-animation-fill-mode:both;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode:both;
+    animation-fill-mode: both;
+
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    animation-duration:1s;
+
+    -webkit-animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    animation-delay: 2s;
+}
+#fadeIn div:nth-child(5) { /* it's actually the first child */
+    opacity: 0;
+    animation: fadeIn ease-in 1; /* call our keyframe named fadeIn, use animation ease-in and repeat it only 1 time */
+    -webkit-animation:fadeIn ease-in 1;
+    -moz-animation:fadeIn ease-in 1;
+    -webkit-animation-fill-mode:both;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode:both;
+    animation-fill-mode: both;
+
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    animation-duration:1s;
+
+    -webkit-animation-delay: 1.3s;
+    -moz-animation-delay: 1.3s;
+    animation-delay: 1.3s;
+}
+#fadeIn div:nth-child(6) {
+    opacity: 0;
+    animation: fadeIn ease-in 1; /* call our keyframe named fadeIn, use animation ease-in and repeat it only 1 time */
+    -webkit-animation:fadeIn ease-in 1;
+    -moz-animation:fadeIn ease-in 1;
+    -webkit-animation-fill-mode:both;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode:both;
+    animation-fill-mode: both;
+
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    animation-duration:1s;
+
+    -webkit-animation-delay: 1.7s;
+    -moz-animation-delay: 1.7s;
+    animation-delay: 1.7s;
+}
+.nav-item:first-child {
+    opacity: 0;
+    animation: fadeIn ease-in 1; /* call our keyframe named fadeIn, use animation ease-in and repeat it only 1 time */
+    -webkit-animation:fadeIn ease-in 1;
+    -moz-animation:fadeIn ease-in 1;
+    -webkit-animation-fill-mode:both;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode:both;
+    animation-fill-mode: both;
+
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    animation-duration:1s;
+
+    -webkit-animation-delay: .5s;
+    -moz-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+}
+.nav-item:nth-child(2) {
+    opacity: 0;
+    animation: fadeIn ease-in 1; /* call our keyframe named fadeIn, use animation ease-in and repeat it only 1 time */
+    -webkit-animation:fadeIn ease-in 1;
+    -moz-animation:fadeIn ease-in 1;
+    -webkit-animation-fill-mode:both;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode:both;
+    animation-fill-mode: both;
+
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    animation-duration:1s;
+
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    animation-delay: 1s;
+}
+.nav-item:nth-child(3) {
+    opacity: 0;
+    animation: fadeIn ease-in 1; /* call our keyframe named fadeIn, use animation ease-in and repeat it only 1 time */
+    -webkit-animation:fadeIn ease-in 1;
+    -moz-animation:fadeIn ease-in 1;
+    -webkit-animation-fill-mode:both;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode:both;
+    animation-fill-mode: both;
+
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    animation-duration:1s;
+
+    -webkit-animation-delay: 1.3s;
+    -moz-animation-delay: 1.3s;
+    animation-delay: 1.3s;
+}
+.nav-item:nth-child(4) {
+    opacity: 0;
+    animation: fadeIn ease-in 1; /* call our keyframe named fadeIn, use animation ease-in and repeat it only 1 time */
+    -webkit-animation:fadeIn ease-in 1;
+    -moz-animation:fadeIn ease-in 1;
+    -webkit-animation-fill-mode:both;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode:both;
+    animation-fill-mode: both;
+
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    animation-duration:1s;
+
+    -webkit-animation-delay: 1.5s;
+    -moz-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+}
+.nav-item:nth-child(5) {
+    opacity: 0;
+    animation: fadeIn ease-in 1; /* call our keyframe named fadeIn, use animation ease-in and repeat it only 1 time */
+    -webkit-animation:fadeIn ease-in 1;
+    -moz-animation:fadeIn ease-in 1;
+    -webkit-animation-fill-mode:both;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode:both;
+    animation-fill-mode: both;
+
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    animation-duration:1s;
+
+    -webkit-animation-delay: 1.8s;
+    -moz-animation-delay: 1.8s;
+    animation-delay: 1.8s;
+}
+.logo {
+    opacity: 0;
+    animation: fadeIn ease-in 1; /* call our keyframe named fadeIn, use animation ease-in and repeat it only 1 time */
+    -webkit-animation:fadeIn ease-in 1;
+    -moz-animation:fadeIn ease-in 1;
+    -webkit-animation-fill-mode:both;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode:both;
+    animation-fill-mode: both;
+
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    animation-duration:1s;
+
+    -webkit-animation-delay: 0.5s;
+    -moz-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+}
+
+
+.fade-in {
+    opacity: 0;
+}
+
+/*.advantages {*/
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*width: 25%;*/
+    /*height: auto;*/
+    /*float: left;*/
+/*}*/
+.advantages img {
+    width: 70px;
+    height: 50px;
+    padding-left: 5%;
+    display: block;
+}
+.advantages p {
+    padding-top: 10%;
+    display: block;
+}
+.margin-auto {
+    display: block;
+    margin: 0 auto;
+}
+.advantages:last-child {
+    float: right !important;
+}
+.m-customized{
+    margin-left: 6.7%;
+}
+.w-30 {
+    width: 29%;
+}
+.text-custom{
+    color: deepskyblue !important;
+}
+.text-custom2 {
+    color: lawngreen;
+}
+.text-custom3 {
+    color: orangered;
+}
+.form-control {
+    border: 1px solid #17a2b8 !important;
+}
+.form-group:first-child {
+    width: 30%;
+    display: inline-block;
+}
+.form-group:nth-child(2) {
+    width: 30%;
+    display: inline-block;
+    margin-left: 5%;
+    margin-right: 4%;
+}
+.form-group:nth-child(3) {
+    width: 30%;
+    display: inline-block;
+}
+textarea {
+    height: 150px;
+}
+.form-group:first-child {
+    padding-top: 6%;
+}
+.form-group:nth-child(2) {
+    padding-top: 6%;
+}
+
+.icons {
+    width: 30px;
+    height: 30px;
+    margin-right: 3%;
+}
+
+footer {
+    height: 20px;
+    width: 100%;
+}
+
+
+/*// Small devices (landscape phones, 576px and up)//*/
+@media (min-width: 320px) and (max-width: 996px) {
+    #fadeIn h1 {
+        font-size: 2.2rem;
+    }
+    .w-30 {
+        width: 100%;
+        padding: 5% 0;
+        margin: 0;
+    }
+    .fade-in h1 {
+        font-size: 3em;
+    }
+    .fade-in p {
+        font-size: 3em;
+    }
+    .paddings {
+        height: 100%;
+        border: none;
+    }
+    #fadeIn div:nth-child(3) {
+        margin-top: 20%;
+        border-bottom: none;
+    }
+    #fadeIn div:nth-child(2) {
+        margin-top: 10%;
+    }
+    .last-child{
+        margin-top: 20%;
+        margin-bottom: 20%;
+    }
+    .form-group:nth-child(1) {
+        width: 100%;
+    }
+    .form-group:nth-child(2) {
+        width: 100%;
+        margin-left: 0;
+        padding-top: 0;
+    }
+    .form-group:nth-child(3) {
+        width: 100%;
+        margin-left: 0;
+    }
+    .paddings-2 {
+        padding-bottom: 15%;
+    }
+    .paddings-2:first-child {
+        height: 110vh !important;
+        border: none;
+    }
+    .paddings-2:last-child {
+        height: auto;
+        border-top: 1px solid lightgrey;
+    }
+    .width-sm-100{
+        width: 100% !important;
+    }
+    .fade-in p {
+        font-size: 8vw;
+    }
+    .fade-in p:nth-child(2) {
+        font-size: 6vw;
+        text-align: justify;
+    }
+    .fade-in p:nth-child(3) {
+        font-size: 4vw;
+        text-align: justify;
+    }
+    .fade-in p:nth-child(4) {
+        font-size: 6vw;
+        text-align: justify;
+    }
+    .icons:nth-child(1) {
+        margin-bottom: 3% !important;
+    }
+    #fadeIn h1 {
+        margin-top: 10%;
+    }
+    #fadeIn div:nth-child(4) {
+        border-bottom: 1px solid lightgrey;
+    }
+    .nav-item {
+        width: 100%;
+    }
+    .nav-item a {
+        font-size: 7.3vw;
+        padding: 2% 0;
+    }
+    .advantages img {
+        width: 12vw;
+    }
+    .large-p {
+        font-size: 4.5vw;
+    }
+
+
+}
+@media (min-width: 997px) and (max-width: 1100px) {
+    .paddings:first-child {
+        height: 150vh;
+    }
+}
+
+
+/*// Medium devices (tablets, 768px and up)*/
+/*@media (min-width: 768px) { ... }*/
+
+/*// Large devices (desktops, 992px and up)*/
+/*@media (min-width: 992px) { ... }*/
+
+/*// Extra large devices (large desktops, 1200px and up)*/
+/*@media (min-width: 1200px) { ... }*/
+
+
+
+
+
